@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html data-theme="darks" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-back"></div>
+    <div class="container">
+      <nav>
+        <div class="left">
+          <h1>Social Media Dashboard</h1>
+          <h4 class="sub">Total Followers: 23,004</h4>
+        </div>
+
+        <div class="right">
+          <span>Dark Mode</span>
+          <div class="toggle">
+            <input type="checkbox" name="toggle" id="toggle" />
+            <label class="toggle-label" for="toggle"></label>
+          </div>
+        </div>
+      </nav>
+
+      <div class="grid">
+        <div class="bigcards facebook">
+          <div class="name">
+            <img src="./images/icon-facebook.svg" alt="facebook icon" />
+            <span>@nathanf</span>
+          </div>
+          <div class="follow">
+            <h1>1987</h1>
+            <p>Followers</p>
+          </div>
+
+          <span class="status">
+            12 Today
+          </span>
+        </div>
+        <div class="bigcards twitter">
+          <div class="name">
+            <img src="./images/icon-twitter.svg" alt="facebook icon" />
+            <span>@nathanf</span>
+          </div>
+          <div class="follow">
+            <h1>1044</h1>
+            <p>Followers</p>
+          </div>
+          <span class="status">
+            99 Today
+          </span>
+        </div>
+        <div class="bigcards instagram">
+          <div class="name">
+            <img src="./images/icon-instagram.svg" alt="facebook icon" />
+            <span>@realnathanf</span>
+          </div>
+          <div class="follow">
+            <h1>11k</h1>
+            <p>Followers</p>
+          </div>
+          <span class="status">
+            1099 Today
+          </span>
+        </div>
+        <div class="bigcards youtube">
+          <div class="name">
+            <img src="./images/icon-youtube.svg" alt="facebook icon" />
+            <span>Nathan F.</span>
+          </div>
+          <div class="follow">
+            <h1>8239</h1>
+            <p>subscribers</p>
+          </div>
+          <span class="status down">
+            144 Today
+          </span>
+        </div>
+      </div>
+
+      <h1 class="subtitle">Overview - Today</h1>
+
+      <div class="grid">
+        <div class="smallcard">
+          <div class="top">
+            <span>Page Views</span>
+            <img src="./images/icon-facebook.svg" alt="facebook" />
+          </div>
+          <div class="bottom">
+            <h1>87</h1>
+            <div class="status">3%</div>
+          </div>
+        </div>
+        <div class="smallcard">
+          <div class="top">
+            <span>Likes</span>
+            <img src="./images/icon-facebook.svg" alt="facebook" />
+          </div>
+          <div class="bottom">
+            <h1>52</h1>
+            <div class="status down">2%</div>
+          </div>
+        </div>
+        <div class="smallcard">
+          <div class="top">
+            <span>Likes</span>
+            <img src="./images/icon-instagram.svg" alt="facebook" />
+          </div>
+          <div class="bottom">
+            <h1>5462</h1>
+            <div class="status">2257%</div>
+          </div>
+        </div>
+        <div class="smallcard">
+          <div class="top">
+            <span>Profile Views</span>
+            <img src="./images/icon-instagram.svg" alt="facebook" />
+          </div>
+          <div class="bottom">
+            <h1>52k</h1>
+            <div class="status">1375%</div>
+          </div>
+        </div>
+        <div class="smallcard">
+          <div class="top">
+            <span>Retweets</span>
+            <img src="./images/icon-twitter.svg" alt="facebook" />
+          </div>
+          <div class="bottom">
+            <h1>117</h1>
+            <div class="status">303%</div>
+          </div>
+        </div>
+        <div class="smallcard">
+          <div class="top">
+            <span>Likes</span>
+            <img src="./images/icon-twitter.svg" alt="facebook" />
+          </div>
+          <div class="bottom">
+            <h1>507</h1>
+            <div class="status">553%</div>
+          </div>
+        </div>
+        <div class="smallcard">
+          <div class="top">
+            <span>Likes</span>
+            <img src="./images/icon-youtube.svg" alt="facebook" />
+          </div>
+          <div class="bottom">
+            <h1>107</h1>
+            <div class="status down">19%</div>
+          </div>
+        </div>
+        <div class="smallcard">
+          <div class="top">
+            <span>Total Views</span>
+            <img src="./images/icon-youtube.svg" alt="facebook" />
+          </div>
+          <div class="bottom">
+            <h1>1407</h1>
+            <div class="status down">12%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script defer>
+      const toggle = document.getElementById("toggle");
+
+      toggle.addEventListener("click", () => {
+        if (toggle.checked) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+          document.documentElement.removeAttribute("data-theme");
+        }
+      });
+    </script>
+  </body>
+</html>
